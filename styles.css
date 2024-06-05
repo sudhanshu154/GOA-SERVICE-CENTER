@@ -1,0 +1,256 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+/* Update the background size for the hero section */
+/* .hero {
+    background: linear-gradient(rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 0.8)), url('hero-image.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the background image covers the entire hero section */
+    color: white;
+} */
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #007BFF;
+    animation: slideIn 1s ease-in-out;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+}
+
+.testimonial i {
+    color: #007BFF;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form .form-group input, form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Additions and modifications to existing CSS */
+
+/* Colors */
+:root {
+    --primary-color: #ff3366; /* Pink */
+    --secondary-color: #00ccff; /* Blue */
+    --text-color: #333;
+}
+
+body {
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+.hero {
+    background: linear-gradient(rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 0.8)), url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+}
+
+section {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.service, .testimonial {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+/* Add hover effects for buttons */
+.btn:hover, .btn-secondary:hover, form button:hover {
+    filter: brightness(90%);
+}
+
+/* Change text color for testimonials */
+.testimonial {
+    color: var(--primary-color);
+}
+
