@@ -53,11 +53,11 @@ header nav ul li a {
     animation: fadeIn 2s ease-in-out;
 }
 /* Update the background size for the hero section */
-/* .hero {
-    background: linear-gradient(rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 0.8)), url('hero-image.jpg') no-repeat center center;
+.hero {
+    background: linear-gradient(rgb(104 42 200 / 58%)), url('hero-image.jpg') no-repeat center center;
     background-size: cover; /* Ensures the background image covers the entire hero section */
     color: white;
-} */
+} 
 
 .hero h2 {
     font-size: 48px;
@@ -211,11 +211,6 @@ body {
 
 header {
     background-color: var(--primary-color);
-}
-
-.hero {
-    background: linear-gradient(rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 0.8)), url('hero-image.jpg') no-repeat center center/cover;
-    color: white;
 }
 
 .btn {
